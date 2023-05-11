@@ -69,6 +69,6 @@ form.addEventListener("submit", (e) => {
     function callSucces() {
         success.style.opacity = 0;
     }
-    setTimeout(callSucces, 2000)
+    setTimeout(callSucces, 3000)
 })
 

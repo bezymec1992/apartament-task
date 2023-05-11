@@ -658,12 +658,44 @@
 
 
 .form-block {
+    position: relative;
     height: 312px;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    background: url("../imgs/form-back.png") no-repeat center center;
+    border-radius: 32px;
+    background: linear-gradient(90deg, rgb(117, 170, 250), rgb(219, 231, 255) 50%, rgb(126, 173, 245));
+    background-size: 200% 200%;
+    animation: gradient 6.5s ease-in-out infinite;
     padding-top: 65px;
+    @media screen and (max-width: 767px) {
+        height: 270px;
+        padding-top: 45px;
+        border-radius: 12px;
+    }
+    .gr {
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        height: auto;
+        z-index: 0;
+        
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+
+    
 
     .form-block-wrapp {
         h2 {
@@ -685,6 +717,8 @@
         }
 
         .form {
+            position: relative;
+            z-index: 1000;
             display: flex;
             justify-content: space-between;
             margin: 0 auto;
@@ -723,7 +757,7 @@
             text-align: center;
             display: block;
             margin: 15px auto 0;
-            color: #10B981;
+            color: #0e9367;
             font-size: 22px;
             text-transform: capitalize;
             transition: ease 0.5s;

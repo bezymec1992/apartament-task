@@ -614,12 +614,57 @@
 }
 
 .form-block {
+  position: relative;
   height: 312px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  background: url("../imgs/form-back.png") no-repeat center center;
+  border-radius: 32px;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(117, 170, 250)), color-stop(50%, rgb(219, 231, 255)), to(rgb(126, 173, 245)));
+  background: linear-gradient(90deg, rgb(117, 170, 250), rgb(219, 231, 255) 50%, rgb(126, 173, 245));
+  background-size: 200% 200%;
+  -webkit-animation: gradient 6.5s ease-in-out infinite;
+          animation: gradient 6.5s ease-in-out infinite;
   padding-top: 65px;
+}
+@media screen and (max-width: 767px) {
+  .form-block {
+    height: 270px;
+    padding-top: 45px;
+    border-radius: 12px;
+  }
+}
+.form-block .gr {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 .form-block .form-block-wrapp h2 {
   text-align: center;
@@ -640,6 +685,8 @@
   }
 }
 .form-block .form-block-wrapp .form {
+  position: relative;
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,7 +726,7 @@
   text-align: center;
   display: block;
   margin: 15px auto 0;
-  color: #10B981;
+  color: #0e9367;
   font-size: 22px;
   text-transform: capitalize;
   -webkit-transition: ease 0.5s;
