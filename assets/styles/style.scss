@@ -360,7 +360,18 @@
         background-color: rgb(255, 255, 255);
         border-radius: 32px;
         padding: 24px;
-
+        h3 {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #1B1C57;
+        }
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #68799F;
+        }
         @media screen and (max-width: 767px) {
             width: unset !important;
         }
