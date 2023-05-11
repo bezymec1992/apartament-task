@@ -22,9 +22,9 @@ menuBtn.addEventListener("click", () => {
 const locations = document.getElementById("location");
 const btnLocation = document.getElementById("btn-location");
 
-window.innerWidth < 767? 
-locations.placeholder = 'Search for the location' :
-locations.placeholder = 'Search for the location you want!'
+window.innerWidth < 767 ?
+    locations.placeholder = 'Search for the location' :
+    locations.placeholder = 'Search for the location you want!'
 
 window.addEventListener("resize", () => {
     window.innerWidth < 767 ?
@@ -56,3 +56,19 @@ const swiper = new Swiper('.swiper', {
         }
     }
 });
+
+//form submit
+const form = document.getElementById("form");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    form.reset()
+
+    const success = document.querySelector(".success");
+    success.style.opacity = 1;
+    function callSucces() {
+        success.style.opacity = 0;
+    }
+    setTimeout(callSucces, 2000)
+})
+
