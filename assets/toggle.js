@@ -22,11 +22,14 @@ menuBtn.addEventListener("click", () => {
 const locations = document.getElementById("location");
 const btnLocation = document.getElementById("btn-location");
 
+window.innerWidth < 767? 
+locations.placeholder = 'Search for the location' :
+locations.placeholder = 'Search for the location you want!'
+
 window.addEventListener("resize", () => {
     window.innerWidth < 767 ?
         locations.placeholder = 'Search for the location' :
         locations.placeholder = 'Search for the location you want!'
-
 })
 
 btnLocation.addEventListener("click", () => {
