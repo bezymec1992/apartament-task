@@ -72,3 +72,23 @@ form.addEventListener("submit", (e) => {
     setTimeout(callSucces, 3000)
 })
 
+
+//swiper3
+const swiper3 = new Swiper('.swiper3', {
+    // Optional parameters
+    // direction: 'vertical',
+    slidesPerView: 'auto',
+    loop: true,
+    spaceBetween: 56,
+    // If we need pagination
+    initialSlide: 1,
+    centeredSlides: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    
+  
+    
+  });
