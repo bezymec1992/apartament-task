@@ -469,6 +469,12 @@
 .tabs .tab-content .swiper2 .swiper-slide {
   width: 340px;
   height: 382;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.tabs .tab-content .swiper2 .swiper-slide:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 .tabs .tab-content .swiper2 .swiper-slide .swip-img-wrap {
   max-width: 340px;
@@ -663,6 +669,12 @@
 .about .swiper3 .swiper-slide {
   max-width: 740px;
   width: 100%;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.about .swiper3 .swiper-slide:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 .about .swiper3 .swiper-pagination-bullet-active {
   background-color: #3C4563;

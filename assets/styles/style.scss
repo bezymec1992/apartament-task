@@ -501,6 +501,11 @@
             .swiper-slide {
                 width: 340px;
                 height: 382;
+                cursor: grab;
+
+                &:active {
+                    cursor: grabbing;
+                }
 
                 .swip-img-wrap {
                     max-width: 340px;
@@ -658,9 +663,11 @@
 .about {
     overflow: hidden;
     padding-bottom: 120px;
+
     @media screen and (max-width: 767px) {
         padding-bottom: 80px;
     }
+
     .about__title {
         .about__line {
             width: 32px;
@@ -670,6 +677,7 @@
             margin: 0 auto;
             margin-bottom: 12px;
         }
+
         .about-gold {
             font-weight: 500;
             font-size: 14px;
@@ -679,6 +687,7 @@
             color: #F59E0B;
             padding-bottom: 12px;
         }
+
         h2 {
             font-weight: 600;
             font-size: 32px;
@@ -687,15 +696,14 @@
             text-transform: capitalize;
             color: #1B1C57;
             padding-bottom: 40px;
+
             @media screen and (max-width: 767px) {
                 font-size: 22px;
                 line-height: 30px;
                 padding-bottom: 20px;
             }
         }
-        
     }
-    
 
     .swiper3 {
         position: relative;
@@ -705,11 +713,17 @@
         .swiper-slide {
             max-width: 740px;
             width: 100%;
+            cursor: grab;
+
+            &:active {
+                cursor: grabbing;
+            }
         }
 
         .swiper-pagination-bullet-active {
             background-color: #3C4563;
         }
+
         .slide__info {
             max-width: 612px;
             width: 100%;
@@ -721,6 +735,7 @@
             box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
             border-radius: 16px;
             padding: 32px;
+
             .slide__info-text {
                 font-weight: 400;
                 font-size: 14px;
@@ -729,6 +744,7 @@
                 opacity: 0.75;
                 padding-bottom: 24px;
             }
+
             h3 {
                 font-weight: 600;
                 font-size: 20px;
@@ -737,14 +753,17 @@
                 color: #1B1C57;
                 margin-bottom: 16px;
             }
+
             .slide-name {
                 padding-left: 24px;
+
                 p {
                     font-weight: 500;
                     font-size: 14px;
                     line-height: 22px;
                     color: #0E1735;
                 }
+
                 span {
                     font-weight: 500;
                     font-size: 14px;
@@ -752,9 +771,11 @@
                     color: #888B97;
                 }
             }
+
             .star {
                 margin-left: auto;
                 margin-top: auto;
+
                 span {
                     font-weight: 600;
                     font-size: 20px;
