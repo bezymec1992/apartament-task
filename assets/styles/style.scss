@@ -200,7 +200,6 @@
     }
 }
 
-////main section
 .main {
     height: 720px;
 
@@ -656,6 +655,184 @@
             display: flex !important;
             justify-content: space-between;
             top: 150px;
+        }
+    }
+}
+
+.sell {
+    padding-bottom: 120px;
+    position: relative;
+
+    .sun3 {
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+
+        background: rgb(255, 152, 130);
+        background: linear-gradient(135deg, rgba(255, 152, 130, 1) 0%, rgba(255, 250, 130, 1) 100%);
+        filter: blur(140px);
+        z-index: -1;
+    }
+
+    .sell__info {
+        @media screen and (max-width: 992px) {
+            padding-left: 15px;
+        }
+
+        padding-left: 40px;
+    }
+
+    .sell__img {
+        overflow: hidden;
+    }
+
+    .sell__gold {
+        padding-bottom: 12px;
+        padding-left: 0;
+
+        span {
+            width: 32px;
+            height: 1px;
+            background-color: #F59E0B;
+
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: capitalize;
+            color: #F59E0B;
+            padding-left: 8px;
+        }
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: capitalize;
+        color: #1B1C57;
+        padding-bottom: 12px;
+    }
+
+    .sell__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #626687;
+        opacity: 0.75;
+        max-width: 413px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .sell__ditail {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: #1B1C57;
+        opacity: 0.75;
+        padding-bottom: 16px;
+    }
+
+    .sell__descriptions {
+        max-width: 440px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 40px;
+        border-bottom: 1px solid #F0F3FD;
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+
+        img {
+            margin-right: 20px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: #3C4563;
+        }
+
+    }
+
+    .sell_person {
+        max-width: 440px;
+        width: 100%;
+
+        @media screen and (max-width: 992px) {
+            padding-bottom: 30px;
+
+            .sell__person-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .sell__name {
+            padding-left: 24px;
+
+            @media screen and (max-width: 992px) {
+                padding-left: 10px;
+            }
+
+            p:first-child {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+                color: #0E1735;
+            }
+
+            p:last-child {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #888B97;
+            }
+        }
+
+        .btn-sell {
+            background-color: #10B981;
+            border-radius: 32px;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            padding: 12px 16px;
+
+            img {
+                margin-right: 16px;
+            }
+        }
+    }
+
+    .swiper4-1 {
+        max-width: 528px;
+        width: 100%;
+        height: 459px;
+        margin-left: auto;
+
+        @media screen and (max-width: 992px) {
+            margin-left: 0;
+            height: 359px;
+        }
+
+        .swiper-slide {
+            img {
+                object-fit: fill;
+                height: 459px;
+
+                @media screen and (max-width: 992px) {
+                    height: auto;
+                    border: 20px;
+                }
+            }
         }
     }
 }
@@ -1151,5 +1328,3 @@ footer {
     }
 
 }
-
-@media screen and (max-width: 767px) {}

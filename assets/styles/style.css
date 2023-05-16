@@ -619,6 +619,167 @@
   }
 }
 
+.sell {
+  padding-bottom: 120px;
+  position: relative;
+}
+.sell .sun3 {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: rgb(255, 152, 130);
+  background: linear-gradient(135deg, rgb(255, 152, 130) 0%, rgb(255, 250, 130) 100%);
+  -webkit-filter: blur(140px);
+          filter: blur(140px);
+  z-index: -1;
+}
+.sell .sell__info {
+  padding-left: 40px;
+}
+@media screen and (max-width: 992px) {
+  .sell .sell__info {
+    padding-left: 15px;
+  }
+}
+.sell .sell__img {
+  overflow: hidden;
+}
+.sell .sell__gold {
+  padding-bottom: 12px;
+  padding-left: 0;
+}
+.sell .sell__gold span {
+  width: 32px;
+  height: 1px;
+  background-color: #F59E0B;
+}
+.sell .sell__gold p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #F59E0B;
+  padding-left: 8px;
+}
+.sell h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #1B1C57;
+  padding-bottom: 12px;
+}
+.sell .sell__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #626687;
+  opacity: 0.75;
+  max-width: 413px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.sell .sell__ditail {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1B1C57;
+  opacity: 0.75;
+  padding-bottom: 16px;
+}
+.sell .sell__descriptions {
+  max-width: 440px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 40px;
+  border-bottom: 1px solid #F0F3FD;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+}
+.sell .sell__descriptions img {
+  margin-right: 20px;
+}
+.sell .sell__descriptions p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #3C4563;
+}
+.sell .sell_person {
+  max-width: 440px;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .sell .sell_person {
+    padding-bottom: 30px;
+  }
+  .sell .sell_person .sell__person-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+.sell .sell_person .sell__name {
+  padding-left: 24px;
+}
+@media screen and (max-width: 992px) {
+  .sell .sell_person .sell__name {
+    padding-left: 10px;
+  }
+}
+.sell .sell_person .sell__name p:first-child {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #0E1735;
+}
+.sell .sell_person .sell__name p:last-child {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #888B97;
+}
+.sell .sell_person .btn-sell {
+  background-color: #10B981;
+  border-radius: 32px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 12px 16px;
+}
+.sell .sell_person .btn-sell img {
+  margin-right: 16px;
+}
+.sell .swiper4-1 {
+  max-width: 528px;
+  width: 100%;
+  height: 459px;
+  margin-left: auto;
+}
+@media screen and (max-width: 992px) {
+  .sell .swiper4-1 {
+    margin-left: 0;
+    height: 359px;
+  }
+}
+.sell .swiper4-1 .swiper-slide img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 459px;
+}
+@media screen and (max-width: 992px) {
+  .sell .swiper4-1 .swiper-slide img {
+    height: auto;
+    border: 20px;
+  }
+}
+
 .about {
   overflow: hidden;
   padding-bottom: 120px;

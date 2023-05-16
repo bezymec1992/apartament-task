@@ -1,11 +1,8 @@
+//drop down menu
 const liToggle = document.getElementById('li');
 liToggle.addEventListener("click", () => {
     liToggle.classList.toggle('open');
 });
-
-
-//     document.addEventListener('DOMContentLoaded', () => {
-// })
 
 const menuBtn = document.querySelector(".open-menu");
 const bodyWrap = document.querySelector(".body__wrapper");
@@ -40,8 +37,6 @@ btnLocation.addEventListener("click", () => {
 const swiper = new Swiper('.swiper', {
     loop: true,
     slidePerColumn: 1,
-    //slidesPerView: 'auto',
-
     simulateTouch: false,
     spaceBetween: 16,
     autoplay: {
@@ -72,23 +67,54 @@ form.addEventListener("submit", (e) => {
     setTimeout(callSucces, 3000)
 })
 
-
 //swiper3
 const swiper3 = new Swiper('.swiper3', {
-    // Optional parameters
-    // direction: 'vertical',
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 56,
-    // If we need pagination
     initialSlide: 1,
     centeredSlides: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-  
-    
-  
-    
   });
+
+
+
+  //swiper4-5
+let swiper4 = new Swiper('.swiper4', {
+    slidesPerView: 1,
+    loop: true,
+    
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+
+    autoplay: {
+        delay: 5000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+  });
+
+  let swiper5 = new Swiper('.swiper5', {
+    slidesPerView: 1,
+    loop: true,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    autoplay: {
+        delay: 5000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+  });
+swiper4.controller.control = swiper5
+swiper5.controller.control = swiper4;
+
+
