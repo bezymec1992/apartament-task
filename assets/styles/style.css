@@ -756,6 +756,10 @@
 .sell .sell_person .btn-sell img {
   margin-right: 16px;
 }
+.sell .swiper4 {
+  max-width: 440px;
+  width: 100%;
+}
 .sell .swiper4-1 {
   max-width: 528px;
   width: 100%;

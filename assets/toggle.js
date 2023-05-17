@@ -91,7 +91,7 @@ let swiper4 = new Swiper('.swiper4', {
     fadeEffect: {
         crossFade: true
     },
-
+    allowTouchMove: false,
     autoplay: {
         delay: 5000,
         stopOnLastSlide: false,
@@ -100,21 +100,16 @@ let swiper4 = new Swiper('.swiper4', {
     },
   });
 
-  let swiper5 = new Swiper('.swiper5', {
-    slidesPerView: 1,
-    loop: true,
-    effect: 'fade',
-    fadeEffect: {
-        crossFade: true
-    },
-    autoplay: {
-        delay: 5000,
-        stopOnLastSlide: false,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-    },
-  });
-swiper4.controller.control = swiper5
-swiper5.controller.control = swiper4;
+  const sellSection = document.getElementById('sell');
+  sellSection.addEventListener('mouseenter', function() {
+    for(let swip of swiper4) {
+        swip.autoplay.stop();
+    }
+  })
+  sellSection.addEventListener('mouseleave', function() {
+    for(let swip of swiper4) {
+        swip.autoplay.start();
+    }
+  })
 
 
